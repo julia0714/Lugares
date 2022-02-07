@@ -41,3 +41,5 @@ class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>(){
         notifyDataSetChanged() //Provoca que se redibuje la lista
     }
 }
+
+//Para que se refleje el ajuste...

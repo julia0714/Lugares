@@ -49,3 +49,4 @@ class AddLugarFragment : Fragment() {
         findNavController().navigate(R.id.action_addLugarFragment_to_nav_lugar)
     }
 }
+//Para que se refleje el ajuste...

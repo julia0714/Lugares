@@ -50,3 +50,5 @@ class LugarFragment : Fragment() {
         _binding = null
     }
 }
+
+//Un ajuste..
