@@ -18,15 +18,29 @@
 
     <string name="msg_nombre">Nombre del lugar</string>
     <string name="msg_correo">Correo (xxxx@abc.com)</string>
+    <string name="msg_imagen">Imagen del lugar</string>
     <string name="msg_telefono">Teléfono (9999-9999)</string>
     <string name="msg_web">Sitio WEB</string>
     <string name="bt_agregar">Agregar</string>
-
+    <string name="bt_actualizar">Actualizar</string>
 
     <string name="msg_lugar_agregado">Lugar Agregado</string>
     <string name="msg_faltan_datos">Faltan Datos</string>
-
-
-
-
+    <string name="msg_lugar_modificado">Lugar actualizado</string>
 </resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

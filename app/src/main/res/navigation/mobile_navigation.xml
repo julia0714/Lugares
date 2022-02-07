@@ -26,13 +26,15 @@
         android:name="com.lugares.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
     <fragment
         android:id="@+id/addLugarFragment"
         android:name="com.lugares.ui.lugar.AddLugarFragment"
-        android:label="fragment_add_lugar"
+        android:label="Add_Lugar_Fragment"
         tools:layout="@layout/fragment_add_lugar" >
         <action
             android:id="@+id/action_addLugarFragment_to_nav_lugar"
             app:destination="@id/nav_lugar" />
     </fragment>
+
 </navigation>

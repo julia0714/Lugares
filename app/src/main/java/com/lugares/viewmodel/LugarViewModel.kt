@@ -1,8 +1,10 @@
 package com.lugares.viewmodel
 
 import android.app.Application
+import androidx.annotation.NonNull
 import androidx.lifecycle.*
 import com.lugares.data.LugarDatabase
+import com.lugares.databinding.LugarFilaBinding
 import com.lugares.model.Lugar
 import com.lugares.repository.LugarRepository
 import kotlinx.coroutines.Dispatchers
