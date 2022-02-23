@@ -7,7 +7,8 @@ import com.lugares.model.Lugar
 @Dao
 interface LugarDao {
 
-    @Query ("SELECT * FROM LUGAR")
+    //Función para obtener la lista de lugares
+    @Query("select * from LUGAR")
     fun getAllData() : LiveData<List<Lugar>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)

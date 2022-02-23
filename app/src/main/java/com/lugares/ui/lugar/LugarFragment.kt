@@ -24,20 +24,23 @@ class LugarFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        lugarViewModel = ViewModelProvider(this)[LugarViewModel::class.java]
+        lugarViewModel =ViewModelProvider(this).get(LugarViewModel::class.java)
+
         _binding = FragmentLugarBinding.inflate(inflater, container, false)
-        binding.fbAgregar.setOnClickListener {
+
+        binding.floatingActionButton.setOnClickListener {
             findNavController().navigate(R.id.action_nav_lugar_to_addLugarFragment)
         }
 
-        //Activar el RecyclerView
-        val lugarAdapter=LugarAdapter()
-        val reciclador = binding.reciclador
-        reciclador.adapter = lugarAdapter
+        //Activar el Recycler View
+        val lugarAdapter=LugarAdapter()  //Se crea un objeto adapter
+        val reciclador = binding.reciclador   //Se recupera el recyclar view de la vista
+
+        reciclador.adapter = lugarAdapter   //Se asigna lugarAdapter como el adapter de reciclador
         reciclador.layoutManager = LinearLayoutManager(requireContext())
 
-        lugarViewModel = ViewModelProvider(this)[LugarViewModel::class.java]
-
+        //Se crea un "observador" para mostrar la info de la tabla lugares...
+        // se actualiza cuando cambio el set de datos
         lugarViewModel.getAllData.observe(viewLifecycleOwner) { lugares ->
             lugarAdapter.setData(lugares)
         }
@@ -50,5 +53,3 @@ class LugarFragment : Fragment() {
         _binding = null
     }
 }
-
-//Un ajuste..

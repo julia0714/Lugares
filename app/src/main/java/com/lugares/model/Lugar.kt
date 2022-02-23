@@ -7,26 +7,26 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName="lugar")
+@Entity(tableName = "lugar")
 data class Lugar(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    @ColumnInfo(name="nombre")
+    @ColumnInfo(name = "nombre")
     val nombre: String,
-    @ColumnInfo(name="correo")
+    @ColumnInfo(name = "correo")
     val correo: String?,
-    @ColumnInfo(name="telefono")
+    @ColumnInfo(name = "telefono")
     val telefono: String?,
-    @ColumnInfo(name="web")
+    @ColumnInfo(name = "web")
     val web: String?,
-    @ColumnInfo(name="latitud")
+    @ColumnInfo(name = "latitud")
     val latitud: Double?,
-    @ColumnInfo(name="longitud")
-    val longiitud: Double?,
-    @ColumnInfo(name="altura")
+    @ColumnInfo(name = "longitud")
+    val longitud: Double?,
+    @ColumnInfo(name = "altura")
     val altura: Double?,
-    @ColumnInfo(name="rutaAudio")
+    @ColumnInfo(name = "rutaAudio")
     val rutaAudio: String?,
-    @ColumnInfo(name="rutaImagen")
+    @ColumnInfo(name = "rutaImagen")
     val rutaImagen: String?
 ) : Parcelable

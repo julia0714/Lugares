@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -14,16 +14,17 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_correo"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -31,16 +32,17 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_clave"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp" />
 
     <EditText
         android:id="@+id/et_clave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/msg_clave"
         android:ems="10"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/msg_btRegister"
             app:srcCompat="@drawable/ic_register" />
 
         <ImageButton
@@ -59,6 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/msg_btLogin"
             app:srcCompat="@drawable/ic_login" />
     </LinearLayout>
 </LinearLayout>
