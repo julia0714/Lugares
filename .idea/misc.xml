@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documentos/movil/Lugares/app/src/main/res/drawable/ic_email.xml" value="0.267" />
+        <entry key="..\:/Documentos/movil/Lugares/app/src/main/res/drawable/ic_location.xml" value="0.267" />
+        <entry key="..\:/Documentos/movil/Lugares/app/src/main/res/drawable/ic_phone.xml" value="0.267" />
         <entry key="..\:/Documentos/movil/Lugares/app/src/main/res/layout/activity_main.xml" value="0.14270833333333333" />
         <entry key="..\:/Documentos/movil/Lugares/app/src/main/res/layout/activity_principal.xml" value="0.27291666666666664" />
         <entry key="..\:/Documentos/movil/Lugares/app/src/main/res/layout/app_bar_principal.xml" value="0.27291666666666664" />
