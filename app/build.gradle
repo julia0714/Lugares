@@ -76,4 +76,7 @@ dependencies {
     implementation 'jp.wasabeef:glide-transformations:4.1.0'
 
     implementation'com.google.firebase:firebase-storage-ktx'
+
+  //para la autenticacion de google
+  implementation'com.google.android.gms:play-services-auth:20.1.0'
 }
