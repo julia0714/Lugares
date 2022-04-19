@@ -1,5 +1,6 @@
 package com.lugares.ui.lugar
 
+import AudioUtiles
 import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Location
@@ -24,6 +25,9 @@ class AddLugarFragment : Fragment() {
     private var _binding: FragmentAddLugarBinding? = null
     private val binding get() = _binding!!
 
+  private lateinit var audioUtiles: AudioUtiles
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -36,6 +40,17 @@ class AddLugarFragment : Fragment() {
         binding.btAddLugar.setOnClickListener {
             agregarLugar()
         }
+
+      audioUtiles = AudioUtiles(
+        requireActivity(),
+        requireContext(),
+        binding.btAccion,
+        binding.btPlay,
+        binding.btDelete,
+        getString(R.string.msg_graba_audio),
+        getString(R.string.msg_detener_audio),
+      )
+
 
         ubicaGPS()
 
